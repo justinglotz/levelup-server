@@ -20,9 +20,11 @@ from django.urls import path
 from django.conf.urls import include
 from rest_framework import routers
 from levelupapi.views import GameTypeView
+from levelupapi.views import EventView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'gametypes', GameTypeView, 'gametype')
+router.register(r'events', EventView, 'event')
 
 urlpatterns = [
     path("admin/", admin.site.urls),
