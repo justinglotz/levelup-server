@@ -1,0 +1,24 @@
+[
+  {
+    "model": "levelupapi.event",
+    "pk": 1,
+    "fields": {
+      "description": "Halo 3 tournament, best of luck",
+      "date": "2025-05-31",
+      "time": "04:00:00",
+      "game_id": 1,
+      "organizer_id": 1
+    }
+  },
+  {
+    "model": "levelupapi.event",
+    "pk": 1,
+    "fields": {
+      "description": "Halo 2 tournament, best of luck",
+      "date": "2025-05-31",
+      "time": "05:00:00",
+      "game_id": 2,
+      "organizer_id": 1
+    }
+  }
+]
