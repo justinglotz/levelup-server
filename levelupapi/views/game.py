@@ -26,8 +26,7 @@ class GameView(ViewSet):
             Response -- JSON serialized list of game types
   """
         games = Game.objects.all()
-        game_type = request.query_params.get(
-            'type', None)  # What does this line mean?
+        game_type = request.query_params.get('type', None)
         if game_type is not None:
             games = games.filter(game_type_id=game_type)
 
@@ -41,4 +40,5 @@ class GameSerializer(serializers.ModelSerializer):
     class Meta:
         model = Game
         fields = ('id', 'title', 'maker', 'number_of_players',
-                  'skill_level', 'gamer_id', 'game_type_id')
+                  'skill_level', 'gamer', 'game_type')
+        depth = 1
