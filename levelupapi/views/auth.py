@@ -1,6 +1,6 @@
-from levelupapi.models import Gamer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from levelupapi.models import Gamer
 
 
 @api_view(['POST'])
